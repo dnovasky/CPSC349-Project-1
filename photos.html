@@ -1,0 +1,15 @@
+---
+layout: base
+title: Photos
+pagination:
+    data: photos.uq9nuzt.media
+    size: 1
+    alias: photo
+    
+permalink: '/{{photo.id}}/'
+---
+<h1>
+    {{photo.alt}}
+</h1>
+
+<img src = {{photo.src.landscape}} alt = {{photo.alt}}>
