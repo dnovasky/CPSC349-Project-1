@@ -11,7 +11,7 @@ pagination:
 </header>
 
 <nav>
-    <ul>
+    <ul style="position: relative; text-align: center;">
         {% for photo in pagination.items -%}
         <li><a href = "/{{photo.id}}"><img src = {{photo.src.tiny}} alt = {{photo.alt}}> </a> </li>
         {% endfor %}
