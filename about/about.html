@@ -8,9 +8,7 @@ title: About Us
 </header>
 
 <nav>
-
 </nav>
-
 
 <body>
 
@@ -18,15 +16,19 @@ title: About Us
 
 <p>{% for team in collections.team %} </p>
 
-- [{{team.data.title}}] ({{team.url}}) 
-<br></br>
-{{team.data.bio}}
+<h2 >{{team.data.title}} </h2></a> 
 
+<img height = "75" width = "75" src="{{team.data.profile_pic}}">
+<a href="{{member_git}}"</a><h4>GitHub Page </h4></a>
+<br></br>
+    {{team.data.bio}}
+
+    <br></br>
 {% endfor %}
 
+<br></br>
+
 </body>
-
-
 
 <footer>
     <hr>
