@@ -1,21 +1,13 @@
 ---
 layout: base
-title: Home
+title: Collection of Snowy Photos
 pagination:
     data: photos.uq9nuzt.media
     size: 50
     alias: photos
 ---
-<header>
-    
-
+<section>
     <h1>{{ title }}</h1>
-    <p>Collection description</p>
-
-    
-</header>
-
-<main>
     <nav>
         <ul>
             {% for photo in pagination.items -%}
@@ -33,4 +25,4 @@ pagination:
         {% endif %}
     </aside>
 
-</main>
+</section>
