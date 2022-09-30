@@ -8,8 +8,13 @@ pagination:
     
 permalink: '/{{photo.id}}/'
 ---
-<h1>
-    {{photo.alt}}
-</h1>
+<header>
+    <h1>{{photo.alt}}</h1>
+    <p>
+        Image Description
+    </p>
+</header>
 
-<img src = {{photo.src.landscape}} alt = {{photo.alt}}>
+<main>
+    <img src = "{{photo.src.landscape}}" alt = "{{photo.alt}}">
+</main>
