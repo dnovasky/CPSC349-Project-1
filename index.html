@@ -1,0 +1,36 @@
+---
+layout: base
+title: Home
+pagination:
+    data: photos.uq9nuzt.media
+    size: 50
+    alias: photos
+---
+<header>
+    
+
+    <h1>{{ title }}</h1>
+    <p>Collection description</p>
+
+    
+</header>
+
+<main>
+    <nav>
+        <ul>
+            {% for photo in pagination.items -%}
+            <li><a href = "/{{photo.id}}"><img src = '{{photo.src.tiny}}' alt = "{{photo.alt}}"> </a> </li>
+            {% endfor %}
+        </ul>
+    </nav>
+    <aside>
+        {% if pagination.href.previous %}
+            <a href="{{pagination.href.previous}}"> Previous Page </a>
+        {% endif %}
+    
+        {% if pagination.href.next %}
+            <a href="{{pagination.href.next}}"> Next Page </a>
+        {% endif %}
+    </aside>
+
+</main>
