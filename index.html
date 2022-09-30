@@ -3,33 +3,42 @@ layout: base
 title: Home
 pagination:
     data: photos.uq9nuzt.media
-    size: 28
+    size: 50
     alias: photos
 ---
 <header>
-    <h1>{{ title }} </h1>
+    
+
+    <h1>{{ title }}</h1>
+    <p>Collection description</p>
+
+    
 </header>
 
-<nav>
-    <ul style="position: relative; text-align: center;">
-        {% for photo in pagination.items -%}
-        <li><a href = "/{{photo.id}}"><img src = {{photo.src.tiny}} alt = {{photo.alt}}> </a> </li>
-        {% endfor %}
-    </ul>
-
-    {% if pagination.href.previous %}
-        <a href="{{pagination.href.previous}}"> Previous Page </a>
-    {% endif %}
-
-    {% if pagination.href.next %}
-        <a href="{{pagination.href.next}}"> Next Page </a>
-    {% endif %}
-
-</nav>
+<section>
+    <nav>
+        <ul>
+            {% for photo in pagination.items -%}
+            <li><a href = "/{{photo.id}}"><img src = {{photo.src.tiny}} alt = {{photo.alt}}> </a> </li>
+            {% endfor %}
+        </ul>
+    </nav>
+</section>
+    
+    
 
 <footer>
-    <hr>
     <p>
+        <aside>
+            {% if pagination.href.previous %}
+                <a href="{{pagination.href.previous}}"> Previous Page </a>
+            {% endif %}
+        
+            {% if pagination.href.next %}
+                <a href="{{pagination.href.next}}"> Next Page </a>
+            {% endif %}
+        </aside>
+
         <small>
             <a href="https://www.pexels.com">Photos provided by Pexels</a>
         </small>
