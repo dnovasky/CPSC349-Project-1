@@ -19,7 +19,7 @@ pagination:
     <nav>
         <ul>
             {% for photo in pagination.items -%}
-            <li><a href = "/{{photo.id}}"><img src = {{photo.src.tiny}} alt = {{photo.alt}}> </a> </li>
+            <li><a href = "/{{photo.id}}"><img src = '{{photo.src.tiny}}' alt = "{{photo.alt}}"> </a> </li>
             {% endfor %}
         </ul>
     </nav>
@@ -28,7 +28,6 @@ pagination:
     
 
 <footer>
-    <p>
         <aside>
             {% if pagination.href.previous %}
                 <a href="{{pagination.href.previous}}"> Previous Page </a>
@@ -42,5 +41,4 @@ pagination:
         <small>
             <a href="https://www.pexels.com">Photos provided by Pexels</a>
         </small>
-    </p>
 </footer>
