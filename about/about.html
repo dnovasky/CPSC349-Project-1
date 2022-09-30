@@ -15,6 +15,14 @@ title: About Us
 
 <h2 align="center">Group Members</h2>
 
+<p>{% for team in collections.team %} </p>
+
+- [{{team.data.title}}] ({{team.url}}) 
+<br></br>
+{{team.data.bio}}
+
+{% endfor %}
+
 </body>
 
 <footer>
