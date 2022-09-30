@@ -8,12 +8,27 @@ title: About Us
 </header>
 
 <nav>
-
 </nav>
 
-<main>
-    <h2>Group Members</h2>
-</main>
+<body>
+
+<h2 align="center">Group Members</h2>
+
+<p>{% for team in collections.team %} </p>
+
+<h2 >{{team.data.title}} </h2></a> 
+
+<img height = "75" width = "75" src="{{team.data.profile_pic}}">
+<a href="{{member_git}}"</a><h4>GitHub Page </h4></a>
+<br></br>
+    {{team.data.bio}}
+
+    <br></br>
+{% endfor %}
+
+<br></br>
+
+</body>
 
 <footer>
     <hr>
