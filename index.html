@@ -1,28 +1,29 @@
 ---
 layout: base
-title: Collection of Snowy Photos
+title: Home
+heading: Collection of Snowy Photos
 pagination:
     data: photos.uq9nuzt.media
-    size: 50
+    size: 24
     alias: photos
 ---
+<section>
 <main>
-    <h1>{{ title }}</h1>
-    <nav>
-        <ul>
-            {% for photo in pagination.items -%}
-            <li><a href = "/{{photo.id}}"><img src = '{{photo.src.tiny}}' alt = "{{photo.alt}}"> </a> </li>
-            {% endfor %}
-        </ul>
-    </nav>
-    <aside>
-        {% if pagination.href.previous %}
-            <a href="{{pagination.href.previous}}"> Previous Page </a>
-        {% endif %}
-    
-        {% if pagination.href.next %}
-            <a href="{{pagination.href.next}}"> Next Page </a>
-        {% endif %}
-    </aside>
+    {% for photo in pagination.items -%}
+    <a href = "/{{photo.id}}">
+        <img src='{{photo.src.tiny}}' alt="{{photo.alt}}" width="266"></a>
+    {% endfor %}
 
-</main>
+        <nav>
+            {% if pagination.href.previous %}
+            <a href="{{pagination.href.previous}}"><Button>Previous Page</Button></a>
+            {% else %}
+            <br/>
+            {% endif %}
+    
+            {% if pagination.href.next %}
+            <a href="{{pagination.href.next}}"><Button>Next Page</Button></a>
+            {% endif %}
+        </nav>
+    </main>
+</section>
