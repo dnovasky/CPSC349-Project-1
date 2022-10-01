@@ -1,40 +1,18 @@
 ---
 layout: base
 title: About Us
-
+heading: Group Members
 ---
-<header>
-    <h1>{{ title }} </h1>
-</header>
-
-<nav>
-</nav>
-
-<body>
-
-<h2 align="center">Group Members</h2>
-
-<p>{% for team in collections.team %} </p>
-
-<h2 >{{team.data.title}} </h2></a> 
-
-<img height = "75" width = "75" src="{{team.data.profile_pic}}">
-<a href="{{member_git}}"</a><h4>GitHub Page </h4></a>
-<br></br>
-    {{team.data.bio}}
-
-    <br></br>
-{% endfor %}
-
-<br></br>
-
-</body>
-
-<footer>
-    <hr>
-    <p>
-        <small>
-            <a href="https://www.pexels.com">Photos provided by Pexels</a>
-        </small>
-    </p>
-</footer>
+<section>
+        {% for team in collections.team %}
+        <aside>
+            <a href="{{team.data.member_git}}">
+                <img height = "75" width = "75" src="{{team.data.profile_pic}}">
+                <p>{{team.data.title}}</p>
+            </a>
+            <!-- <a href="{{member_git}}">GitHub</a> -->
+            <p>{{team.data.bio}}</p>
+            <br/>
+        </aside>
+        {% endfor %}
+</section>

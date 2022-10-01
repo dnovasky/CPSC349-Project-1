@@ -3,30 +3,32 @@ site: CPSC 349 - Fall 2022 - Project 1
 ---
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <title>{{ title }} - {{ site }}</title>
-    <link rel="stylesheet" href="https://unpkg.com/mvp.css">
-</head>
+    <head>
+        <title>{{ title }} - {{ site }}</title>
+        <link rel="stylesheet" href="https://unpkg.com/mvp.css">
+    </head>
 
-<body>
-    <header>
-        <nav>
-            <a href="/">Home</a>
-            <a href="/about/">About Us!</a>
-        </nav>
-        <hr>
-    </header>
+    <body style="background-color: {{avg_color}}">
+        <header>
+            <nav>
+                <a href=""><img src='https://raw.githubusercontent.com/dnovasky/CPSC349-Project-1/test/e.png' alt="Group 5 WebDev in blue circle" width="100"></a>
+                <h1>{{heading}}</h1>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/about/">About Us!</a></li>
+                </ul>
+            </nav>
+            
+            <hr>
+        </header>
+        {{ content }}
     
-
-    {{ content }}
-    
-    <footer>
-        <hr>
-        <small>
+        <footer>
+            <hr>
+            <small>
              <a href="https://www.pexels.com">Photos provided by Pexels</a>
-        </small>
-    </footer>
-</body>
-
+            </small>
+        </footer>
+    </body>
 
 </html>

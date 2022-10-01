@@ -5,13 +5,14 @@ pagination:
     data: photos.uq9nuzt.media
     size: 1
     alias: photo
-    
 permalink: '/{{photo.id}}/'
+eleventyComputed:
+    heading: "{{photo.alt}}"
+    avg_color: "{{photo.avg_color}}"
 ---
 <section>
     <main>
-        <h1>{{photo.alt}}</h1>
-        <img src = "{{photo.src.landscape}}" alt = "{{photo.alt}}">
+        <img src = "{{photo.src.landscape}}" alt ="{{photo.alt}}">
         <summary>Image description</summary>
         <br/>
 
