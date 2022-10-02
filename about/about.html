@@ -3,16 +3,19 @@ layout: base
 title: About Us
 heading: Group Members
 ---
-<section>
+<main>
+    <section>
+        <header><h2>Meet the Team</h2></header>
         {% for team in collections.team %}
         <aside>
             <a href="{{team.data.member_git}}">
-                <img height = "75" width = "75" src="{{team.data.profile_pic}}">
+                <img height = "75" width = "75" src="{{team.data.profile_pic}}" 
+                    alt="Profile photo of {{team.data.title}}.">
                 <p>{{team.data.title}}</p>
             </a>
-            <!-- <a href="{{member_git}}">GitHub</a> -->
             <p>{{team.data.bio}}</p>
             <br/>
         </aside>
         {% endfor %}
-</section>
+    </section>
+</main>
