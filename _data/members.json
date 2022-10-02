@@ -1,0 +1,31 @@
+{
+    "members": [
+        {
+            "name" : "Kevin Delgado",
+            "bio" : "[Placeholder]",
+            "gitlink" : "https://github.com/KevinDelgad",
+            "gitpic" : "https://avatars.githubusercontent.com/u/54679846?v=4"
+        },
+        {
+            "name" : "Nicholas Harney",
+            "bio" : "Nicholas Harney is developing the initial About page of the project. He uses the eleventy collections to include the team members bio information, as well as a link to each member's github page.",
+            "gitlink" : "https://github.com/nicholascsuf",
+            "gitpic" : "https://avatars.githubusercontent.com/u/35970284?v=4"
+        },
+        {
+            "name" : "ethanton0927",
+            "bio" : "[Placeholder]",
+            "gitlink" : "https://github.com/ethanton0927",
+            "gitpic" : "https://avatars.githubusercontent.com/u/114612365?v=4"
+
+        },
+        {
+            "name" : "Donald Novasky",
+            "bio" : "[Placeholder]",
+            "gitlink" : "https://github.com/dnovasky",
+            "gitpic" : "https://avatars.githubusercontent.com/u/10171648?v=4"
+
+        }
+    ]
+
+}
