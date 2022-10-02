@@ -5,19 +5,17 @@ heading: Group Members
 ---
 <main>
     <section>
-        <h2>Meet the Team!</h2>
+        <header><h2>Meet the Team</h2></header>
         {% for member in members.members %}
         <aside>
             <a href="{{member.gitlink}}">
-                <img height = "75" width = "75" src="{{member.gitpic}}" alt="Team member profile picture">
+                <img height = "75" width = "75" src="{{member.gitpic}}" 
+                    alt="Profile photo of {{member.name}}.">
                 <p>{{member.name}}</p>
             </a>
-            <!-- <a href="{{member_git}}">GitHub</a> -->
-            <p>{{member.bio}}</p>
+            <p>{{team.data.bio}}</p>
             <br/>
         </aside>
         {% endfor %}
-</section>
-
-
+    </section>
 </main>

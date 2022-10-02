@@ -7,22 +7,25 @@ pagination:
     size: 24
     alias: photos
 ---
-
 <main>
-    {% for photo in pagination.items -%}
-    <a href = "/{{photo.id}}">
-        <img src='{{photo.src.tiny}}' alt="{{photo.alt}}" width="266"></a>
-    {% endfor %}
 
-        <nav>
-            {% if pagination.href.previous %}
-            <a href="{{pagination.href.previous}}"><b>Previous Page</b></a>
-            {% else %}
-            <br/>
-            {% endif %}
+        <header><h2>Page {{pagination.pageNumber | plus: 1}}</h2></header>
+        {% for photo in pagination.items -%}
+        <a href = "/{{photo.id}}">
+            <img src='{{photo.src.tiny}}' alt="{{photo.alt}}" width="266"></a>
+        {% endfor %}
+  
+
+    <nav>
+        {% if pagination.href.previous %}
+        <a href="{{pagination.href.previous}}"><b>Previous Page</b></a>
+        {% else %}
+        <br/>
+        {% endif %}
     
-            {% if pagination.href.next %}
-            <a href="{{pagination.href.next}}"><b>Next Page</b></a>
-            {% endif %}
-        </nav>
-    </main>
+        {% if pagination.href.next %}
+        <a href="{{pagination.href.next}}"><b>Next Page</b></a>
+        {% endif %}
+    </nav>
+
+</main>
