@@ -7,7 +7,7 @@ pagination:
     size: 24
     alias: photos
 ---
-<section>
+
 <main>
     {% for photo in pagination.items -%}
     <a href = "/{{photo.id}}">
@@ -16,14 +16,13 @@ pagination:
 
         <nav>
             {% if pagination.href.previous %}
-            <a href="{{pagination.href.previous}}"><Button>Previous Page</Button></a>
+            <a href="{{pagination.href.previous}}"><b>Previous Page</b></a>
             {% else %}
             <br/>
             {% endif %}
     
             {% if pagination.href.next %}
-            <a href="{{pagination.href.next}}"><Button>Next Page</Button></a>
+            <a href="{{pagination.href.next}}"><b>Next Page</b></a>
             {% endif %}
         </nav>
     </main>
-</section>

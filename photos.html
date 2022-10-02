@@ -10,22 +10,24 @@ eleventyComputed:
     heading: "{{photo.alt}}"
     avg_color: "{{photo.avg_color}}"
 ---
-<section>
+
     <main>
         <img src = "{{photo.src.landscape}}" alt ="{{photo.alt}}">
-        <summary>Image description</summary>
+        <p>Image description</p>
         <br/>
 
         <nav>
             {% if pagination.href.previous %}
-            <a href="{{pagination.href.previous}}"><Button>Previous Page</Button></a>
+            <a href="{{pagination.href.previous}}"><b>Previous Page</b></a>
             {% endif %}
             {% if pagination.href.next %}
-            <a href="{{pagination.href.next}}"><Button>Next Page</Button></a>
+            <a href="{{pagination.href.next}}"><b>Next Page
+                
+            </b></a>
             {% endif %}
         </nav>
         <p>
             Photographer: <a href="{{photo.photographer_url}}"> {{photo.photographer}}</a>
         </p>
     </main>
-</section>
+
