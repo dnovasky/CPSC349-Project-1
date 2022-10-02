@@ -6,12 +6,12 @@ heading: Group Members
 <main>
     <section>
         <header><h2>Meet the Team</h2></header>
-        {% for team in collections.team %}
+        {% for member in members.members %}
         <aside>
-            <a href="{{team.data.member_git}}">
-                <img height = "75" width = "75" src="{{team.data.profile_pic}}" 
-                    alt="Profile photo of {{team.data.title}}.">
-                <p>{{team.data.title}}</p>
+            <a href="{{member.gitlink}}">
+                <img height = "75" width = "75" src="{{member.gitpic}}" 
+                    alt="Profile photo of {{member.name}}.">
+                <p>{{member.name}}</p>
             </a>
             <p>{{team.data.bio}}</p>
             <br/>

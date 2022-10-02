@@ -11,20 +11,26 @@ eleventyComputed:
 ---
 <main>
     <section>
-        <header><h2>Shot by: {{photo.photographer}}</h2></header>
-        <img src = "{{photo.src.landscape}}" alt ="{{photo.alt}}">
+        <header>
+            <h2>
+                Photographer: <a href="{{photo.photographer_url}}">{{photo.photographer}}</a>
+            </h2>
+        </header>
+        <img src="{{photo.src.landscape}}" alt="{{photo.alt}}">
         <p>Image description</p>
         <br/>
     </section>
 
     <nav>
         {% if pagination.href.previous %}
-        <a href="{{pagination.href.previous}}"><i>Previous Page</i></a>
+        <a href="{{pagination.href.previous}}">
+            <b>Previous Page</b></a>
         {% else %}
         <br/>
         {% endif %}
         {% if pagination.href.next %}
-        <a href="{{pagination.href.next}}"><i>Next Page</i></a>
+        <a href="{{pagination.href.next}}">
+            <b>Next Page</b></a>
         {% endif %}
     </nav>
 </main>
