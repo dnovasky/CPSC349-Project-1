@@ -2,27 +2,27 @@
     "members": [
         {
             "name" : "Kevin Delgado",
-            "bio" : "[Placeholder]",
-            "gitlink" : "https://github.com/KevinDelgad",
+            "bio" : "Kevin Delgado created the static sites, added and linked the home photos, created the consistant nav bar/footer, and ensured all html was valid.",
+            "gitlink" : "https://github.com/KevinDelgad/CPSC349-Project-1",
             "gitpic" : "https://avatars.githubusercontent.com/u/54679846?v=4"
         },
         {
             "name" : "Nicholas Harney",
             "bio" : "Nicholas Harney is developing the initial About page of the project. He uses the eleventy collections to include the team members bio information, as well as a link to each member's github page.",
-            "gitlink" : "https://github.com/nicholascsuf",
+            "gitlink" : "https://github.com/nicholascsuf/CPSC349-Project-1",
             "gitpic" : "https://avatars.githubusercontent.com/u/35970284?v=4"
         },
         {
             "name" : "Ethan Ton",
             "bio" : "Ethan assisted with the formatting of the pages and the application of the mvp.css for the design of the website.",
-            "gitlink" : "https://github.com/ethanton0927",
+            "gitlink" : "https://github.com/ethanton0927/CPSC349-Project-1",
             "gitpic" : "https://avatars.githubusercontent.com/u/114612365?v=4"
 
         },
         {
             "name" : "Donald Novasky",
             "bio" : "[Placeholder]",
-            "gitlink" : "https://github.com/dnovasky",
+            "gitlink" : "https://github.com/dnovasky/CPSC349-Project-1",
             "gitpic" : "https://avatars.githubusercontent.com/u/10171648?v=4"
 
         }
