@@ -11,7 +11,7 @@ eleventyComputed:
     avg_color: "{{photo.avg_color}}"
 ---
 <main>
-    <section>
+    <figure>
         <header>
             <h2>
                 Photographer: <a href="{{photo.photographer_url}}">{{photo.photographer}}</a>
@@ -20,7 +20,7 @@ eleventyComputed:
         <img src="{{photo.src.landscape}}" alt="{{photo.alt}}">
         <p>{{photo.alt}} taken by {{photo.photographer}}</p>
         <br/>
-    </section>
+    </figure>
 
     <nav>
         {% if pagination.href.previous %}
