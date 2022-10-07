@@ -2,7 +2,7 @@
     "members": [
         {
             "name" : "Kevin Delgado",
-            "bio" : "Kevin Delgado created the static sites, added and linked the home photos, created the consistant nav bar/footer, and ensured all html was valid.",
+            "bio" : "Kevin Delgado created the static sites, added and linked the home photos, created the consistant nav bar/footer, and ensured all html was valid. The site will also be hosted on this repository",
             "gitlink" : "https://github.com/KevinDelgad/CPSC349-Project-1",
             "gitpic" : "https://avatars.githubusercontent.com/u/54679846?v=4"
         },
