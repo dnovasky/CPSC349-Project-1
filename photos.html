@@ -24,13 +24,13 @@ eleventyComputed:
 
     <nav>
         {% if pagination.href.previous %}
-        <a href="{{pagination.href.previous}}">
+        <a href="/CPSC349-Project-1{{pagination.href.previous}}">
             <b>Previous Page</b></a>
         {% else %}
         <br/>
         {% endif %}
         {% if pagination.href.next %}
-        <a href="{{pagination.href.next}}">
+        <a href="/CPSC349-Project-1{{pagination.href.next}}">
             <b>Next Page</b></a>
         {% endif %}
     </nav>
